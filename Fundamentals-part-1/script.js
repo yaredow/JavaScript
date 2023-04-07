@@ -18,5 +18,20 @@
 // javaScriptIsFun = "YES";
 // console.log(typeof javaScriptIsFun);
 
-year = 1991;
-console.log(typeof year);
+// year = 1991;
+// console.log(typeof year);
+
+// Implicit and Explicit type coercsion
+// const now = 2023;
+// const ageYared = now - 1996;
+// const ageNahom = now - 2010;
+// console.log(`${ageYared * 2}, ${ageNahom / 10}`);
+// const firstName = "Yared";
+// const lastName = "Yilma";
+// console.log(firstName + " " + lastName);
+let x = 10 + 5;
+x += 10;
+x *= 10;
+x++;
+x--;
+console.log(x);
