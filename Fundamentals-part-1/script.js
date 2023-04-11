@@ -134,3 +134,32 @@
 // } else {
 //   console.log("No one win the game");
 // }
+
+// const day = "Friday";
+// if (day === "Monday") {
+//   console.log("Work on Uolo for 5 hours");
+// } else if (day === "Tuesday") {
+//   console.log("work on CSS for 6 hours");
+// } else if (day === "Wensday" || day === "Thursday") {
+//   console.log(
+//     "Work on Uolo for 5 hours and work on JavaScript portfolio for 3 hours"
+//   );
+// } else if (day === "Friday") {
+//   console.log("Work on Technical writing for 6 hours.");
+// } else if (day === "Saturday" || day === "Sunday") {
+//   console.log("Enjoy the weeknd :D");
+// } else console.log("wrong input");
+
+// switch (day) {
+//   case "Friday":
+//     console.log("Work on Uolo for 5 hours.");
+//     break;
+// const age = 23;
+// console.log(` I like to drink ${age >= 18 ? "wine" : "water"}`);
+
+const bill = 305;
+console.log(
+  `The bill was ${bill}, the tip was ${
+    bill >= 50 && bill <= 300 ? (tip = (bill * 15) / 100) : (bill * 20) / 100
+  }`
+);
