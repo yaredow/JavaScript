@@ -115,9 +115,22 @@
 //   console.log("Height is not defined");
 // }
 
-const age = 18;
-if (age === "18") {
-  console.log("You are an adult");
-} else {
-  console.log("You are a piece of shit");
-}
+// const favMovie = prompt("Bro, what is your favorite movie?");
+
+// if (favMovie === "TopGun") {
+//   console.log("bro, you have a good movie test");
+// } else {
+//   console.log("bro, you a dumb bitch");
+// }
+
+// dolphinAvg = (96 + 108 + 89) / 3;
+// koalasAvg = (88 + 91 + 110) / 3;
+// if (dolphinAvg > koalasAvg && dolphinAvg >= 100) {
+//   console.log(`Dolphin is the winner with avg score ${dolphinAvg}`);
+// } else if (dolphinAvg < koalasAvg && koalasAvg >= 100) {
+//   console.log(`Koala is the winner with an avarage score ${koalasAvg}`);
+// } else if ((dolphinAvg === koalasAvg && koalasAvg, dolphinAvg >= 100)) {
+//   console.log("it is a draw");
+// } else {
+//   console.log("No one win the game");
+// }
