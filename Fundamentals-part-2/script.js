@@ -11,3 +11,34 @@
 // console.log(appleJuice);
 // const appleOrangeJuice = fruitJuice(3, 5);
 // console.log(appleOrangeJuice);
+
+// function declaration
+// function calcAge1(birthYear) {
+//   return 2023 - birthYear;
+// }
+// const myAge1 = calcAge1(1996);
+
+// // function expression
+
+// const calcAge2 = function (birthYear) {
+//   return 2023 - birthYear;
+// };
+// const myAge2 = calcAge2(1996);
+// console.log(myAge1, myAge2);
+// Arrow function
+
+// const add = (a, b) => a + b;
+
+// const addition = add(3, 4);
+// console.log(addition);
+const fruitPieces = function (fruit) {
+  return fruit * 4;
+};
+
+const fruitprocessor = function (apples, oranges) {
+  const applePieces = fruitPieces(apples);
+  const orangePieces = fruitPieces(oranges);
+  const juice = `juice with ${applePieces} apples and ${orangePieces} oranges`;
+  return juice;
+};
+console.log(fruitprocessor(3, 2));
