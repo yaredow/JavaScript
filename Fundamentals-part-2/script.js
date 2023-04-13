@@ -42,3 +42,6 @@ const fruitprocessor = function (apples, oranges) {
   return juice;
 };
 console.log(fruitprocessor(3, 2));
+const color = ["red", "blue", "green", "yellow"];
+const myFavColor = color[color.length - 1];
+console.log(` my favorite color is ${myFavColor}`);
