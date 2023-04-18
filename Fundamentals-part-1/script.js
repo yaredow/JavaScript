@@ -200,12 +200,16 @@
 
 // const Movies = ["Inception", "Lord of the rings", "The batman", "Morbius"];
 // Movies.unshift("Titanic"); // this will add the string Titanic to the begning of the Array
-// console.log(Movies); // Output: ["Titanic", "Inception", "Lord of the rings", "The batman", "Morbius"]
+// console.log(Movies); // Outp ut: ["Titanic", "Inception", "Lord of the rings", "The batman", "Morbius"]
 
 // let emptyArray = [];
 // emptyArray.unshift("hello");
 // console.log(emptyArray); // outputs ["hello"]
 
+// const Movies = ["Inception", "Lord of the rings", "The batman", "Morbius"];
+// Movies.splice(2, 1, "The Hulk", "Iron Man");
+// console.log(Movies); // output: ['Inception', 'Lord of the rings', 'The Hulk', 'Iron Man', 'Morbius']
+
 const Movies = ["Inception", "Lord of the rings", "The batman", "Morbius"];
-const superHeroMovies = Movies.slice(3, 4);
-console.log(superHeroMovies);
+const index = Movies.indexOf("Inception");
+console.log(index); // Output: 0
