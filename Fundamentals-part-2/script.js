@@ -58,9 +58,19 @@
 const Yared = {
   firstName: "Yared",
   lastName: "Yilma",
-  age: 2023 - 1996,
-  job: "Software development",
+  birthYear: 1996,
+  job: "Software developer  ",
   friends: ["Yonas", "Nahom", "Tom"],
+  hasDriversLicense: true,
+  calcAge: function () {
+    this.age = 2023 - this.birthYear;
+    return this.age;
+  },
+  getSummary: function () {
+    return `${this.firstName} is a ${this.age} years old ${
+      this.job
+    }, and he has ${this.hasDriversLicense ? "a" : "no"} drivers license`;
+  },
 };
 
 // console.log(Yared["firstName"]);
@@ -84,3 +94,6 @@ Yared["Twitter"] = "@yaredow";
 console.log(
   `${Yared.firstName} has ${Yared.friends.length} friends, and his best friend is ${Yared.friends[1]}`
 );
+console.log(Yared.calcAge());
+
+console.log(Yared.getSummary());
