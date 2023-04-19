@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 // const private = 123;
 // function fruitJuice(Apple, Orange) {
 //   console.log(Apple, Orange);
@@ -201,3 +201,7 @@ const calcAvg = function (arr) {
 
 const avgValue = calcAvg(totals);
 console.log(avgValue);
+
+//checking prittier single quote
+
+console.log('I am single quote');
