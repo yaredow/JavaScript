@@ -174,3 +174,30 @@
 //     console.log("The loop is about to end...");
 //   }
 // }
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
+
+for (let i = 0; i <= bills.length - 1; i++) {
+  const calcTip = function (bill) {
+    if (bill >= 50 && bill <= 300) {
+      return (bill * 15) / 100;
+    } else {
+      return (bill * 20) / 100;
+    }
+  };
+
+  tips.push(calcTip(bills[i]));
+  totals.push(bills[i] + tips[i]);
+}
+const calcAvg = function (arr) {
+  let sum = 0;
+  for (let k = 0; k <= arr.length - 1; k++) {
+    sum += arr[k];
+  }
+  return sum / arr.length;
+};
+
+const avgValue = calcAvg(totals);
+console.log(avgValue);
