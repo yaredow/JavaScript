@@ -1,6 +1,8 @@
 'use strict';
 
 // scores elements
+let playerEl0 = document.querySelector('.player--0');
+let playerEl1 = document.querySelector('.player--1');
 let score1 = document.getElementById('score--0');
 let score2 = document.getElementById('score--1');
 // current scores elemenst
@@ -29,8 +31,11 @@ const roll = function () {
     document.getElementById(`current--${acivePlayer}`).textContent =
       currentPlayerScore;
   } else {
-    acivePlayer = acivePlayer === 0 ? 1 : 0;
+    document.getElementById(`current--${acivePlayer}`).textContent = 0;
     currentPlayerScore = 0;
+    acivePlayer = acivePlayer === 0 ? 1 : 0;
+    playerEl0.classList.toggle('player--active');
+    playerEl1.classList.toggle('player--active');
   }
 };
 
