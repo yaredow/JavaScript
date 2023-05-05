@@ -109,3 +109,36 @@
 // //the binding method
 // const bookAd = book.bind(adAirline, 23, 'Sintayehu Yilma');
 // bookAd();
+
+const poll = {
+  question: 'What is your favourite programming language?',
+  options: ['0: JavaScript', '1: Python', '2: Rust', '3: C++'],
+  // This generates [0, 0, 0, 0]. More in the next section!
+  answers: new Array(4).fill(0),
+  // Method to resgistor new answers
+  registorNewAnswers: function () {
+    const answer = Number(
+      prompt(
+        `${this.question}\n${this.options.join('\n')}\n Write option number`
+      )
+    );
+    typeof answer === 'number' &&
+      answer < this.options.length &&
+      this.answers[answer]++;
+    this.displayResults('string');
+  },
+  //Method to display results
+  displayResults: function (type) {
+    if (type === 'Array') {
+      console.log(this.answers);
+    } else if (type === 'string') {
+      console.log(`Poll results are ${this.answers.join(', ')}`);
+    }
+  },
+};
+
+poll.registorNewAnswers();
+
+document
+  .querySelector('.poll')
+  .addEventListener('click', poll.registorNewAnswers.bind(poll));
